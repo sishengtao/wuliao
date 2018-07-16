@@ -29,7 +29,7 @@
         <!-- 数据库链接URL、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://119.28.52.147:3306/test" userId="test"
-                        password="sst975965">
+                        password="975965">
         </jdbcConnection>
 
         <!-- 类型转换 -->
@@ -65,7 +65,8 @@
         <!-- 列出要生成代码的所有表，这里配置的是不生成Example文件 -->
         <!-- schema即为数据库名 tableName为对应的数据库表 domainObjectName是要生成的实体类 enable*ByExample
                    是否生成 example类   -->
-        <table tableName="dept" domainObjectName="Dept"/>
+        <!--<table tableName="dept" domainObjectName="Dept"/>-->
+        <table tableName="access_token" domainObjectName="accessToken"/>
 
     </context>
 </generatorConfiguration>

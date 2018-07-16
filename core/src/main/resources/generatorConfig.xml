@@ -28,7 +28,7 @@
 
         <!-- 数据库链接URL、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://119.28.52.147:3306/test" userId="root"
+                        connectionURL="jdbc:mysql://119.28.52.147:3306/test" userId="test"
                         password="sst975965">
         </jdbcConnection>
 

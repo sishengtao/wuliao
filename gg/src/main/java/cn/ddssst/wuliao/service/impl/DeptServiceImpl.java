@@ -27,12 +27,12 @@ public class DeptServiceImpl implements DeptService {
     public String send(SendRequest sendRequest) {
         try {
             Template template = new Template();
-            template.setToUser("oPSpuwy9NAMPjondXuovc8EOGNZE");
-            template.setTemplateId("oUsJWiuEO_lLjgGmsKx8ADLhvRfRK88yIYsuhKXdnts");
-            template.setTopColor("red");
-            template.setUrl("www.ddssst.cn");
+            template.setToUser("oPSpuw04YI9cRMH2SojVd5DeR");
+            template.setTemplateId("oUsJWiuEO_lLjgGmsKx8ADLhvRfRK88yIYsuhKX");
+            template.setTopColor("#173177");
+            template.setUrl("https://www.ddssst.cn/a.txt");
             template.setTemplateParamList(sendRequest);
-            String token=WXUtils.accessToken("wx33c54612a173e93c","5fe77e00254562bde4e78058eee6fb63");
+            String token=WXUtils.accessToken("wx33c54612a173e93c","5fe77e00254562bde4e78");
             WXUtils.sendTemplateMsg(token,template);
             return template.toJSON();
         }catch (Exception e){

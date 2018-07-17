@@ -58,7 +58,7 @@ public class Template {
                 param.setName(field.getName());
                 field.setAccessible(true);
                 param.setValue(field.get(t).toString());
-                param.setColor("blue");
+                param.setColor("#ff4400");
                 templateParams.add(param);
             }
             this.templateParamList=templateParams;
@@ -77,9 +77,10 @@ public class Template {
             param = templateParamList.get(i);
             // 判断是否追加逗号  
             if (i < this.templateParamList.size() - 1) {
-
+//                buffer.append(String.format("\"%s\": {\"value\":\"%s\"},", param.getName(), param.getValue()));
                 buffer.append(String.format("\"%s\": {\"value\":\"%s\",\"color\":\"%s\"},", param.getName(), param.getValue(), param.getColor()));
             } else {
+//                buffer.append(String.format("\"%s\": {\"value\":\"%s\"}", param.getName(), param.getValue()));
                 buffer.append(String.format("\"%s\": {\"value\":\"%s\",\"color\":\"%s\"}", param.getName(), param.getValue(), param.getColor()));
             }
 
